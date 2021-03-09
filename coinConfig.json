@@ -1,0 +1,9 @@
+{
+  "zano": {
+    "funcFile": "./lib/zano.js",
+    "sigDigits": 1000000000000,
+    "name": "Zano",
+    "mixIn": 4,
+    "shortCode": "ZANO"
+  }
+}

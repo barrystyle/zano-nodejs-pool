@@ -5,6 +5,8 @@
   * Pool initialization script
   **/
 
+ let coinInc;
+
  // Load needed modules
  var fs = require('fs');
  var cluster = require('cluster');
@@ -29,6 +31,12 @@
         log('error', logSystem, 'Invalid pool wallet address in configuration file (poolServer.poolAddress)');
         process.exit();
  }
+
+ // Load coin functions
+ let coinConfig = fs.readFileSync("./coinConfig.json");
+ global.config['coin'] = JSON.parse(coinConfig)[global.config.coin];
+ coinInc = require(global.config.coin.funcFile);
+ global.coinFuncs = new coinInc();
 
  // Initialize redis database client
  var redis = require('redis');

@@ -37,6 +37,7 @@
  global.config['coin'] = JSON.parse(coinConfig)[global.config.coin];
  coinInc = require(global.config.coin.funcFile);
  global.coinFuncs = new coinInc();
+ global.support = require("./lib/support.js")();
 
  // Initialize redis database client
  var redis = require('redis');

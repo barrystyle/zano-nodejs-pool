@@ -16,7 +16,7 @@
 		"circular-buffer": "1.0.2",
 		"cli-color": "*",
 		"cryptoforknote-util": "git://github.com/barrystyle/zano-node-util.git",
-		"cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git",
+		"cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git#462a51fabbd2121ee7daf4fb7ac5a938b3ae52bf",
 		"dateformat": "*",
 		"domexception": "*",
 		"mailgun.js": "*",

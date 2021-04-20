@@ -4,9 +4,8 @@ zano-nodejs-pool
 zano's stratum fork ported over dvandal/cryptonote-nodejs-pool.
 
 doesn't require sql, lmdb and the kitchen sink...
+correctly handles miners/auth, validates progpow shares and has an accurate shareperminute based vardiff implementation
 
+barrystyle 21042021
 
-admittedly is a bit rough, but handles miners, logins and validates progpow shares correctly.
-
-
-![validation](https://i.imgur.com/Hg3B4Ot.png)
+![validation](https://i.imgur.com/z3GzFsV.png)
